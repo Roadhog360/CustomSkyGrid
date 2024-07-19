@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "customskygrid",
+  "version": "${version}",
+  "name": "Custom SkyGrid",
+  "description": "",
+  "authors": ["Roadhog360"],
+  "contact": {
+    "repo": "https://github.com/roadhog360/CustomSkyGrid"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/customskygrid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "roadhog.customskygrid.client.CustomSkyGridClient"
+    ],
+    "main": [
+      "roadhog.customskygrid.CustomSkyGrid"
+    ]
+  },
+  "mixins": [
+    "customskygrid.mixins.json"
+  ],
+  "accessWidener": "customskygrid.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
